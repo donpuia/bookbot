@@ -9,6 +9,11 @@ except IndexError:
 from stats import get_book_text, count_each_character, print_character_counts
 
 def main(): 
+    '''Main function to run the book analysis.
+    
+    This function will read the book text, count the total number of words,
+    count the occurrences of each character, and print the results to the console.
+    '''
     book_text = get_book_text(sys.argv[1])
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {sys.argv[1]}...")
